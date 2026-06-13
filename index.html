@@ -1,175 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Travel Explorer</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="description" content="Travel Explorer - Discover amazing destinations around the world">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Explorer</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <header>
+    <div class="container">
+        <h1>Travel Explorer</h1>
 
-<div class="container">
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
 
-<h1>Travel Explorer</h1>
-
-<nav>
-<a href="#about">About</a>
-<a href="#destinations">Destinations</a>
-<a href="#tips">Travel Tips</a>
-<a href="#gallery">Gallery</a>
-<a href="#contact">Contact</a>
-</nav>
-
-<button id="themeBtn">🌙 Theme</button>
-
-</div>
-
+        <button id="themeBtn">🌙 Dark Mode</button>
+    </div>
 </header>
 
+<main>
+
 <section class="hero">
+    <div class="hero-content">
+        <h2>Discover Amazing Destinations</h2>
 
-<h2>Discover Amazing Destinations</h2>
+        <p>
+            Explore beautiful places around the world and plan
+            your next unforgettable journey.
+        </p>
 
-<p>
-Explore beautiful places around the world and plan
-your next unforgettable journey.
-</p>
-
-<a href="#gallery" class="btn">
-Explore Now
-</a>
-
+        <a href="#destinations" class="btn">
+            Explore Now
+        </a>
+    </div>
 </section>
-
-<img
-src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200"
-alt="Travel destination"
-class="hero-image">
 
 <section id="about" class="section">
 
-<h2>About Travel Explorer</h2>
+    <h2>About Travel Explorer</h2>
 
-<p>
-Travel Explorer is designed to inspire travelers by
-showcasing popular destinations, useful travel tips,
-and breathtaking photography from around the world.
-</p>
+    <p>
+        Travel Explorer is a modern travel website designed
+        to inspire travelers by showcasing breathtaking
+        destinations, travel tips, and unforgettable experiences.
+    </p>
 
 </section>
 
 <section id="destinations" class="section">
 
-<h2>Top Destinations</h2>
+    <h2>Popular Destinations</h2>
 
-<div class="cards">
+    <div class="cards">
 
-<div class="card">
-<h3>Japan</h3>
-<p>
-Experience modern cities, traditional culture,
-and beautiful cherry blossoms.
-</p>
-</div>
+        <article class="card">
+            <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=600"
+                 alt="Tokyo Japan">
+            <h3>Japan</h3>
+            <p>
+                Discover traditional temples,
+                modern cities, and beautiful cherry blossoms.
+            </p>
+        </article>
 
-<div class="card">
-<h3>Switzerland</h3>
-<p>
-Enjoy stunning mountains, lakes,
-and scenic train journeys.
-</p>
-</div>
+        <article class="card">
+            <img src="https://images.unsplash.com/photo-1527668752968-14dc70a27c95?w=600"
+                 alt="Switzerland Mountains">
+            <h3>Switzerland</h3>
+            <p>
+                Enjoy breathtaking mountain views,
+                lakes, and scenic train rides.
+            </p>
+        </article>
 
-<div class="card">
-<h3>Italy</h3>
-<p>
-Discover history, architecture,
-and world-famous cuisine.
-</p>
-</div>
+        <article class="card">
+            <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=600"
+                 alt="Italy Venice">
+            <h3>Italy</h3>
+            <p>
+                Explore rich history, architecture,
+                and world-famous cuisine.
+            </p>
+        </article>
 
-</div>
+    </div>
 
 </section>
 
-<section id="tips" class="section">
+<section id="packages" class="section">
 
-<h2>Travel Tips</h2>
+    <h2>Travel Packages</h2>
 
-<ul class="goal-list">
-<li>Pack only essential items.</li>
-<li>Book flights early.</li>
-<li>Purchase travel insurance.</li>
-<li>Create a travel budget.</li>
-<li>Keep copies of important documents.</li>
-</ul>
+    <table>
+
+        <thead>
+            <tr>
+                <th>Package</th>
+                <th>Duration</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>Japan Discovery</td>
+                <td>7 Days</td>
+                <td>$1,200</td>
+            </tr>
+
+            <tr>
+                <td>Swiss Adventure</td>
+                <td>10 Days</td>
+                <td>$1,800</td>
+            </tr>
+
+            <tr>
+                <td>Italy Experience</td>
+                <td>8 Days</td>
+                <td>$1,500</td>
+            </tr>
+
+        </tbody>
+
+    </table>
 
 </section>
 
 <section id="gallery" class="section">
 
-<h2>Travel Gallery</h2>
+    <h2>Travel Gallery</h2>
 
-<div class="gallery">
+    <div class="gallery">
 
-<img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=500" alt="Japan">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=500" alt="Beach">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=500" alt="Mountain">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=500" alt="Lake">
+        <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=500" alt="Forest">
+        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=500" alt="Nature">
+        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=500" alt="Landscape">
 
-<img src="https://images.unsplash.com/photo-1521295121783-8a321d551ad2?w=500" alt="Switzerland">
+    </div>
 
-<img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=500" alt="Italy">
+</section>
 
-<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=500" alt="Beach">
+<section id="faq" class="section">
 
-<img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=500" alt="Mountain">
+    <h2>Frequently Asked Questions</h2>
 
-<img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=500" alt="Nature">
+    <details>
+        <summary>How can I book a trip?</summary>
+        <p>Use our contact form and our team will assist you.</p>
+    </details>
 
-</div>
+    <details>
+        <summary>Do you offer travel insurance?</summary>
+        <p>Yes, travel insurance options are available.</p>
+    </details>
+
+    <details>
+        <summary>Can I customize a package?</summary>
+        <p>Absolutely. We offer flexible travel plans.</p>
+    </details>
 
 </section>
 
 <section id="contact" class="section">
 
-<h2>Contact Us</h2>
+    <h2>Contact Us</h2>
 
-<form id="contactForm">
+    <form id="contactForm">
 
-<input
-type="text"
-placeholder="Your Name"
-required>
+        <label for="name">Name</label>
+        <input
+            type="text"
+            id="name"
+            required>
 
-<input
-type="email"
-placeholder="Email Address"
-required>
+        <label for="email">Email</label>
+        <input
+            type="email"
+            id="email"
+            required>
 
-<textarea
-placeholder="Your Message"
-required></textarea>
+        <label for="message">Message</label>
+        <textarea
+            id="message"
+            rows="5"
+            required></textarea>
 
-<button type="submit">
-Send Message
-</button>
+        <button type="submit">
+            Send Message
+        </button>
 
-</form>
+    </form>
 
 </section>
 
+</main>
+
 <footer>
-
-<p>
-© 2026 Travel Explorer
-</p>
-
+    <p>
+        © 2026 Travel Explorer | Designed for Educational Purposes
+    </p>
 </footer>
 
-<button id="topBtn">
-↑
-</button>
+<button id="topBtn">↑</button>
 
 <script src="script.js"></script>
 
