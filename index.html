@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Investment Portfolio</title>
+<title>FutureVest Investment Portfolio</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
@@ -11,88 +11,184 @@
 
 <header>
     <div class="container">
-        <h1>Investment Portfolio</h1>
+
+        <h1>FutureVest</h1>
 
         <nav>
             <a href="#about">About</a>
             <a href="#services">Services</a>
+            <a href="#markets">Markets</a>
             <a href="#portfolio">Portfolio</a>
+            <a href="#goals">Goals</a>
             <a href="#contact">Contact</a>
         </nav>
 
         <button id="themeBtn">🌙 Theme</button>
+
     </div>
 </header>
 
 <section class="hero">
-    <h2>Build Your Financial Future</h2>
+
+    <h2>Invest Smarter, Grow Faster</h2>
+
     <p>
-        Professional investment strategies, portfolio management,
-        and financial planning.
+        Explore modern investment strategies, market insights,
+        and portfolio management solutions designed for long-term success.
     </p>
 
-    <a href="#contact" class="btn">
-        Get Started
-    </a>
+    <a href="#contact" class="btn">Get Started</a>
+
 </section>
 
+<img
+src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=1200"
+alt="Investment and financial growth dashboard"
+class="hero-image">
+
 <section id="about" class="section">
-    <h2>About Us</h2>
+
+    <h2>About FutureVest</h2>
 
     <p>
-        We help investors build diversified portfolios through
-        stocks, bonds, real estate, and digital assets.
+        FutureVest helps investors build strong and diversified portfolios
+        through stocks, bonds, real estate, and digital assets.
+        Our mission is to provide accessible financial knowledge and
+        investment opportunities for everyone.
     </p>
+
 </section>
 
 <section id="services" class="section">
+
     <h2>Investment Services</h2>
 
     <div class="cards">
 
         <div class="card">
-            <h3>Stock Market</h3>
-            <p>Long-term growth investments.</p>
+            <h3>Stock Investing</h3>
+            <p>
+                Long-term growth opportunities through diversified
+                stock portfolios.
+            </p>
         </div>
 
         <div class="card">
             <h3>Real Estate</h3>
-            <p>Stable income and appreciation.</p>
+            <p>
+                Stable investment options focused on income and value appreciation.
+            </p>
         </div>
 
         <div class="card">
             <h3>Cryptocurrency</h3>
-            <p>Modern digital asset strategies.</p>
+            <p>
+                Exposure to emerging digital assets and blockchain innovation.
+            </p>
         </div>
 
     </div>
+
+</section>
+
+<section id="markets" class="section">
+
+    <h2>Market Performance</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>S&P 500</h3>
+            <p>
+                Represents 500 leading companies and remains a benchmark
+                for long-term investing.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>NASDAQ</h3>
+            <p>
+                Technology-focused index featuring many of the world's
+                largest growth companies.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Dow Jones</h3>
+            <p>
+                Tracks 30 major companies across multiple industries.
+            </p>
+        </div>
+
+    </div>
+
 </section>
 
 <section id="portfolio" class="section">
-    <h2>Sample Portfolio</h2>
+
+    <h2>Sample Investment Portfolio</h2>
 
     <table>
-        <tr>
-            <th>Asset</th>
-            <th>Allocation</th>
-        </tr>
 
-        <tr>
-            <td>Stocks</td>
-            <td>50%</td>
-        </tr>
+        <thead>
+            <tr>
+                <th>Asset Class</th>
+                <th>Allocation</th>
+            </tr>
+        </thead>
 
-        <tr>
-            <td>Real Estate</td>
-            <td>30%</td>
-        </tr>
+        <tbody>
 
-        <tr>
-            <td>Crypto</td>
-            <td>20%</td>
-        </tr>
+            <tr>
+                <td>Stocks</td>
+                <td>50%</td>
+            </tr>
+
+            <tr>
+                <td>Real Estate</td>
+                <td>25%</td>
+            </tr>
+
+            <tr>
+                <td>Bonds</td>
+                <td>15%</td>
+            </tr>
+
+            <tr>
+                <td>Cryptocurrency</td>
+                <td>10%</td>
+            </tr>
+
+        </tbody>
 
     </table>
+
+</section>
+
+<section id="goals" class="section">
+
+    <h2>Investment Goals</h2>
+
+    <ul class="goal-list">
+        <li>Retirement Planning</li>
+        <li>Wealth Preservation</li>
+        <li>Passive Income Generation</li>
+        <li>Risk Management</li>
+        <li>Financial Independence</li>
+    </ul>
+
+</section>
+
+<section class="section">
+
+    <h2>Why Choose FutureVest?</h2>
+
+    <p>
+        Our approach combines research, diversification,
+        and disciplined investing to help clients reach
+        their long-term financial objectives.
+    </p>
+
 </section>
 
 <section id="contact" class="section">
@@ -106,20 +202,20 @@
             id="name"
             placeholder="Your Name"
             required
-        >
+            aria-label="Name">
 
         <input
             type="email"
             id="email"
             placeholder="Email Address"
             required
-        >
+            aria-label="Email">
 
         <textarea
             id="message"
-            placeholder="Message"
+            placeholder="Your Message"
             required
-        ></textarea>
+            aria-label="Message"></textarea>
 
         <button type="submit">
             Send Message
@@ -129,9 +225,15 @@
 
 </section>
 
-<button id="topBtn">
-↑
-</button>
+<footer>
+
+    <p>
+        © 2026 FutureVest Investment Portfolio
+    </p>
+
+</footer>
+
+<button id="topBtn">↑</button>
 
 <script src="script.js"></script>
 
