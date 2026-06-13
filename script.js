@@ -1,43 +1,95 @@
-const themeBtn =
-document.getElementById("themeBtn");
+const themeBtn = document.getElementById("themeBtn");
+const topBtn = document.getElementById("topBtn");
+const contactForm = document.getElementById("contactForm");
 
-themeBtn.addEventListener("click",()=>{
+/* DARK MODE */
 
-document.body.classList.toggle("dark");
+themeBtn.addEventListener("click", () => {
 
-});
+    document.body.classList.toggle("dark");
 
-const topBtn =
-document.getElementById("topBtn");
-
-window.addEventListener("scroll",()=>{
-
-if(window.scrollY>300){
-topBtn.style.display="block";
-}
-else{
-topBtn.style.display="none";
-}
+    if(document.body.classList.contains("dark")){
+        themeBtn.textContent = "☀️ Light Mode";
+    }else{
+        themeBtn.textContent = "🌙 Dark Mode";
+    }
 
 });
 
-topBtn.addEventListener("click",()=>{
+/* BACK TO TOP */
 
-window.scrollTo({
-top:0,
-behavior:"smooth"
+window.addEventListener("scroll", () => {
+
+    if(window.scrollY > 300){
+        topBtn.style.display = "block";
+    }else{
+        topBtn.style.display = "none";
+    }
+
 });
 
+topBtn.addEventListener("click", () => {
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+
 });
 
-document
-.getElementById("contactForm")
-.addEventListener("submit",(e)=>{
+/* CONTACT FORM */
 
-e.preventDefault();
+contactForm.addEventListener("submit", (e) => {
 
-alert(
-"Thank you for contacting Travel Explorer!"
-);
+    e.preventDefault();
+
+    const name =
+    document.getElementById("name").value.trim();
+
+    const email =
+    document.getElementById("email").value.trim();
+
+    const message =
+    document.getElementById("message").value.trim();
+
+    if(
+        name === "" ||
+        email === "" ||
+        message === ""
+    ){
+        alert("Please fill in all fields.");
+        return;
+    }
+
+    alert(
+        "Thank you, " +
+        name +
+        "! Your message has been sent successfully."
+    );
+
+    contactForm.reset();
+
+});
+
+/* IMAGE HOVER ANIMATION */
+
+const galleryImages =
+document.querySelectorAll(".gallery img");
+
+galleryImages.forEach((image) => {
+
+    image.addEventListener("mouseenter", () => {
+
+        image.style.transform =
+        "scale(1.08)";
+
+    });
+
+    image.addEventListener("mouseleave", () => {
+
+        image.style.transform =
+        "scale(1)";
+
+    });
 
 });
