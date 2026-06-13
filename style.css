@@ -6,13 +6,11 @@ scroll-behavior:smooth;
 }
 
 body{
-font-family:Arial, Helvetica, sans-serif;
-line-height:1.7;
+font-family:Arial,sans-serif;
 background:#f4f7fb;
 color:#333;
+line-height:1.7;
 }
-
-/* HEADER */
 
 header{
 background:#0f172a;
@@ -21,7 +19,6 @@ padding:20px;
 position:sticky;
 top:0;
 z-index:1000;
-box-shadow:0 2px 10px rgba(0,0,0,0.2);
 }
 
 .container{
@@ -33,34 +30,19 @@ align-items:center;
 flex-wrap:wrap;
 }
 
-header h1{
-font-size:2rem;
-}
-
-nav{
-display:flex;
-gap:15px;
-}
-
 nav a{
 color:white;
 text-decoration:none;
+margin:0 10px;
 font-weight:bold;
-transition:0.3s;
 }
-
-nav a:hover{
-color:#60a5fa;
-}
-
-/* HERO */
 
 .hero{
 padding:120px 20px;
 text-align:center;
 background:linear-gradient(
 135deg,
-#2563eb,
+#0ea5e9,
 #1e293b
 );
 color:white;
@@ -71,29 +53,15 @@ font-size:3rem;
 margin-bottom:20px;
 }
 
-.hero p{
-max-width:700px;
-margin:auto;
-font-size:1.2rem;
-}
-
 .btn{
 display:inline-block;
-margin-top:30px;
-padding:14px 28px;
 background:white;
-color:#2563eb;
-font-weight:bold;
-text-decoration:none;
+color:#0ea5e9;
+padding:12px 25px;
+margin-top:25px;
 border-radius:8px;
-transition:0.3s;
+text-decoration:none;
 }
-
-.btn:hover{
-transform:translateY(-3px);
-}
-
-/* IMAGE */
 
 .hero-image{
 width:100%;
@@ -101,10 +69,7 @@ max-width:1000px;
 display:block;
 margin:40px auto;
 border-radius:15px;
-box-shadow:0 5px 20px rgba(0,0,0,0.2);
 }
-
-/* SECTIONS */
 
 .section{
 max-width:1200px;
@@ -115,75 +80,47 @@ padding:80px 20px;
 .section h2{
 text-align:center;
 margin-bottom:30px;
-font-size:2.2rem;
-color:#1e293b;
 }
-
-.section p{
-font-size:1.1rem;
-}
-
-/* CARDS */
 
 .cards{
 display:grid;
 grid-template-columns:repeat(3,1fr);
 gap:25px;
-margin-top:30px;
 }
 
 .card{
 background:white;
 padding:25px;
-border-radius:12px;
-box-shadow:0 5px 15px rgba(0,0,0,.1);
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-8px);
-}
-
-.card h3{
-margin-bottom:10px;
-color:#2563eb;
-}
-
-/* TABLE */
-
-table{
-width:100%;
-margin-top:30px;
-border-collapse:collapse;
-background:white;
+border-radius:10px;
 box-shadow:0 5px 15px rgba(0,0,0,.1);
 }
-
-th{
-background:#2563eb;
-color:white;
-}
-
-th,
-td{
-padding:15px;
-text-align:center;
-border:1px solid #ddd;
-}
-
-/* GOALS */
 
 .goal-list{
-max-width:600px;
+max-width:700px;
 margin:auto;
-font-size:1.1rem;
 }
 
 .goal-list li{
-margin-bottom:15px;
+margin-bottom:12px;
 }
 
-/* FORM */
+.gallery{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:10px;
+transition:.3s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
 
 form{
 max-width:700px;
@@ -196,120 +133,53 @@ gap:15px;
 input,
 textarea{
 padding:15px;
-border:1px solid #ccc;
-border-radius:8px;
 font-size:16px;
 }
 
-textarea{
-height:150px;
-resize:vertical;
+button{
+padding:12px;
+cursor:pointer;
 }
-
-form button{
-background:#2563eb;
-color:white;
-border:none;
-border-radius:8px;
-font-size:16px;
-}
-
-form button:hover{
-opacity:0.9;
-}
-
-/* FOOTER */
 
 footer{
 background:#0f172a;
 color:white;
 text-align:center;
 padding:25px;
-margin-top:50px;
 }
-
-/* THEME BUTTON */
-
-#themeBtn{
-background:#2563eb;
-color:white;
-border:none;
-border-radius:8px;
-padding:10px 15px;
-}
-
-/* TOP BUTTON */
 
 #topBtn{
 position:fixed;
 right:20px;
 bottom:20px;
-background:#2563eb;
-color:white;
-border:none;
-border-radius:50%;
-width:50px;
-height:50px;
-font-size:20px;
 display:none;
 }
-
-/* DARK MODE */
 
 .dark{
 background:#111827;
 color:white;
 }
 
-.dark .section h2{
-color:white;
-}
-
 .dark .card{
 background:#1f2937;
-color:white;
 }
 
-.dark table{
-background:#1f2937;
-color:white;
-}
-
-.dark input,
-.dark textarea{
-background:#374151;
-color:white;
-border:none;
-}
-
-.dark footer{
-background:black;
-}
-
-/* RESPONSIVE */
-
-@media (max-width:768px){
+@media(max-width:768px){
 
 .container{
 flex-direction:column;
-gap:15px;
-}
-
-nav{
-flex-wrap:wrap;
-justify-content:center;
 }
 
 .cards{
 grid-template-columns:1fr;
 }
 
-.hero h2{
-font-size:2rem;
+.gallery{
+grid-template-columns:1fr;
 }
 
-.hero p{
-font-size:1rem;
+.hero h2{
+font-size:2rem;
 }
 
 }
