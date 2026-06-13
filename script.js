@@ -1,25 +1,27 @@
 const themeBtn =
 document.getElementById("themeBtn");
 
-themeBtn.addEventListener("click", () => {
+themeBtn.addEventListener("click",()=>{
+
 document.body.classList.toggle("dark");
+
 });
 
 const topBtn =
 document.getElementById("topBtn");
 
-window.addEventListener("scroll", () => {
+window.addEventListener("scroll",()=>{
 
-if(window.scrollY > 300){
-topBtn.style.display = "block";
+if(window.scrollY>300){
+topBtn.style.display="block";
 }
 else{
-topBtn.style.display = "none";
+topBtn.style.display="none";
 }
 
 });
 
-topBtn.addEventListener("click", () => {
+topBtn.addEventListener("click",()=>{
 
 window.scrollTo({
 top:0,
@@ -35,7 +37,7 @@ document
 e.preventDefault();
 
 alert(
-"Thank you! Your message has been sent."
+"Thank you for contacting Travel Explorer!"
 );
 
 });
